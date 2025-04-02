@@ -84,7 +84,12 @@ public abstract partial class PlotViewBase : BaseTemplatedView<Grid>, IPlotView
             tc.Content = TrackerControl.DefaultTrackerTemplateContentProvider();
             return tc;
         });
-        this.LayoutChanged += this.OnLayoutUpdated;
+        this.SizeChanged += this.OnLayoutUpdated;
+    }
+
+    private void PlotViewBase_SizeChanged(object sender, EventArgs e)
+    {
+        throw new NotImplementedException();
     }
 
     /// <summary>

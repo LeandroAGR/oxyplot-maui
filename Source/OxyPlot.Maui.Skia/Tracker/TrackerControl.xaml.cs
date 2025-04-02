@@ -372,7 +372,7 @@ public partial class TrackerControl
 
         var canvasWidth = parent.Width;
         var canvasHeight = parent.Height;
-        var contentSize = content.Measure(canvasWidth, canvasHeight).Request;
+        var contentSize = content.Measure(canvasWidth, canvasHeight);
 
         var contentWidth = contentSize.Width;
         var contentHeight = contentSize.Height;
